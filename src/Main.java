@@ -142,7 +142,6 @@ public class Main {
     }
 
     public static void task6_1 (int passengerNumber) {
-
         if ( passengerNumber > 102) {
             System.out.println("Всего в вагоне уже 102 пассажира. Свободных мест нет.");
         }
@@ -172,9 +171,31 @@ public class Main {
         allPassengers = 42;
         task6_1(allPassengers);
     }
+
+    public static void task7_1 (int a, int b, int c) {
+        System.out.print("Минимальным из чисел (" + a + ", " + b + ", " + c + ")" );
+        if ( a > b ) a = b;
+        if ( a > c ) a = c;
+        System.out.println(" является число " + a);
+    }
+
     public static void task7 () {
         System.out.println("\nЗадача №7");
         // Пишем код для задачи 7
-    }
 
+        int one = 45;
+        int two = 22;
+        int three = 16;
+        task7_1(one, two, three);
+
+        one = 1;
+        two = 4;
+        three = 17;
+        task7_1(one, two, three);
+
+        one = 18;
+        two = 7;
+        three = 27;
+        task7_1(one, two, three);
+    }
 }
