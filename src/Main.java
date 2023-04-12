@@ -31,11 +31,11 @@ public class Main {
 
     public static void task2_1 (byte outsideTp) {
         if (outsideTp <= 5) {
-            System.out.println("На улице холодно " + outsideTp +
+            System.out.println("На улице " + outsideTp +
                     " градусов, нужно надеть шапку.");
         }
         else {
-            System.out.println("На улице тепло " + outsideTp +
+            System.out.println("На улице " + outsideTp +
                     " градусов, можно идти без шапки.");
         }
     }
@@ -48,10 +48,23 @@ public class Main {
         task2_1(outside);
     }
 
+    public static void task3_1 (short carSpeed) {
+        if (carSpeed <= 60) {
+            System.out.println("Если скорость " + carSpeed +
+                    ", то можно ездить спокойно.");
+        }
+        else {
+            System.out.println("Если скорость " + carSpeed +
+                    ", то придется заплатить штраф.");
+        }
+    }
     public static void task3 () {
-        System.out.println("\nЗадача 3");
+        System.out.println("\nЗадача №3");
         // Пишем код для задачи 3
-
+        short speed = 44;
+        task3_1(speed);
+        speed = 97;
+        task3_1(speed);
     }
 
     public static void task4 () {
