@@ -29,10 +29,23 @@ public class Main {
         task1_1(personAge);
     }
 
+    public static void task2_1 (byte outsideTp) {
+        if (outsideTp <= 5) {
+            System.out.println("На улице холодно " + outsideTp +
+                    " градусов, нужно надеть шапку.");
+        }
+        else {
+            System.out.println("На улице тепло " + outsideTp +
+                    " градусов, можно идти без шапки.");
+        }
+    }
     public static void task2 () {
-        System.out.println("\nЗадача 2");
+        System.out.println("\nЗадача №2");
         // Пишем код для задачи 2
-
+        byte outside = -4;
+        task2_1(outside);
+        outside = 12;
+        task2_1(outside);
     }
 
     public static void task3 () {
