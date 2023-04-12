@@ -67,10 +67,48 @@ public class Main {
         task3_1(speed);
     }
 
+    public static void task4_1 (short age) {
+
+        if ( age > 24) {
+            System.out.println("Если возраст человека равен " + age +
+                    ", то ему пора ходить на работу.");
+        }
+        else {
+            if ( age > 18 ) {
+                System.out.println("Если возраст человека равен " + age +
+                        ", то его место в университете.");
+            }
+            else {
+                if ( age > 6 )
+                System.out.println("Если возраст человека равен " + age +
+                        ", то ему нужно ходить в школу.");
+                else {
+                    if ( age > 1 ) {
+                        System.out.println("Если возраст человека равен " + age +
+                                ", то ему нужно ходить в детский сад.");
+                    }
+                }
+            }
+        }
+
+    }
     public static void task4 () {
         System.out.println("\nЗадача 4");
         // Пишем код для задачи 4
+        short personAge = 28;
+        task4_1(personAge);
 
+        personAge = 18;
+        task4_1(personAge);
+
+        personAge = 24;
+        task4_1(personAge);
+
+        personAge = 7;
+        task4_1(personAge);
+
+        personAge = 2;
+        task4_1(personAge);
     }
 
     public static void task5 () {
