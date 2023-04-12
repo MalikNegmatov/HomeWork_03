@@ -10,10 +10,23 @@ public class Main {
         task7();
     }
 
+    public static void task1_1 (byte age) {
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age +
+                    ", то он совершеннолетний.");
+        }
+        else {
+            System.out.println("Если возраст человека равен " + age +
+                    ", то он не достиг совершеннолетия, нужно немного подождать.");
+        }
+    }
     public static void task1 () {
         System.out.println("Задача 1");
         // Пишем код для задачи 1
-
+        byte personAge = 22;
+        task1_1(personAge);
+        personAge = 14;
+        task1_1(personAge);
     }
 
     public static void task2 () {
