@@ -175,7 +175,8 @@ public class Main {
     public static void task7_1 (int a, int b, int c) {
         System.out.print("Максимальным из чисел (" + a + ", " + b + ", " + c + ")" );
         if ( a < b ) a = b;
-        if ( a < c ) a = c;
+        else b = a;
+        if ( b < c ) a = c;
         System.out.println(" является число " + a);
     }
 
