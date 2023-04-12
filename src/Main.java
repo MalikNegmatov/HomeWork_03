@@ -21,7 +21,7 @@ public class Main {
         }
     }
     public static void task1 () {
-        System.out.println("Задача 1");
+        System.out.println("Задача №1");
         // Пишем код для задачи 1
         byte personAge = 22;
         task1_1(personAge);
